@@ -1,0 +1,46 @@
+\begin{thebibliography}{}
+
+\bibitem[Anaconda, 2017]{anaconda2025}
+Anaconda, I. (2017).
+\newblock Managing environments, user guide.
+\newblock
+  \url{https://docs.conda.io/projects/conda/en/stable/user-guide/tasks/manage-environments.html}.
+  Recuperado el 17 de abril del 2025.
+
+\bibitem[Jolowicz, 2024]{jolowicz2024}
+Jolowicz, C. (2024).
+\newblock {\em Hypermodern Python tooling}.
+\newblock O'Reilly Media, Inc., Sebastopol, CA.
+\newblock 268 p.
+
+\bibitem[Mayer, 2012]{mayer2012}
+Mayer, C. (2012).
+\newblock {PEP} 405 – {P}ython virtual environments.
+\newblock \url{https://peps.python.org/pep-0405/}. Recuperado el 18 de abril
+  del 2025.
+
+\bibitem[Microsoft, 2025]{vsc2025}
+Microsoft (2025).
+\newblock Python environments in {VS} code.
+\newblock \url{https://code.visualstudio.com/docs/python/environments}.
+  Recuperado 18 de abril del 2025.
+
+\bibitem[Rohowsky, 2023]{rohowsky2023}
+Rohowsky, M. (2023).
+\newblock Pycharm virtual environments (venv) explained! 10 min updated 2023.
+  [video]. youtube.
+\newblock \url{https://youtu.be/2P30W3TN4nI?si=y_1fJbyXGPsOfUZE}.
+
+\bibitem[The Python~Software, 2025a]{python2025}
+The Python~Software, F. (2025a).
+\newblock venv — creation of virtual environments, {P}ython documentation.
+\newblock \url{https://docs.python.org/3/library/venv.html}. Recuperado el 16
+  de abril del 2025.
+
+\bibitem[The Python~Software, 2025b]{pythont2025}
+The Python~Software, F. (2025b).
+\newblock Virtual environments and packages, {P}ython tutorial.
+\newblock \url{https://docs.python.org/3/tutorial/venv.html}. Recuperado el 16
+  de abril del 2025.
+
+\end{thebibliography}
