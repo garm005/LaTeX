@@ -1,0 +1,180 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Plantilla para notas
+%% 
+%% Gabriel Ruiz Martinez 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass{article}
+
+% -> Paquetes
+% para tipo de fuente
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[default]{sourcesanspro}
+
+\usepackage{amsfonts}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage[spanish]{babel}
+\usepackage{booktabs}
+\usepackage{caption}
+\usepackage{cancel}
+\usepackage{colortbl}
+\usepackage{enumerate}
+\usepackage{esvect}
+\usepackage{fancyhdr}
+\usepackage{float}
+%\usepackage[bottom]{footmisc}
+\usepackage{graphicx}
+\usepackage[letterpaper,
+			lmargin = 3.0cm, 
+			rmargin = 3.0cm,
+			headsep = 0.3cm,
+			textheight = 23cm,
+			includeheadfoot = true,
+			headheight = 1.0cm,
+			footskip = 1.0cm,
+			showframe = false,
+			twocolumn = false]{geometry}
+\usepackage{listings}
+%\usepackage{pythonhighlight}
+\usepackage{makeidx}
+\usepackage{mathtools}
+\usepackage{mathptmx}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{natbib}
+%\usepackage[parfill]{parskip}    	% Activate to begin paragraphs with an empty line rather than an indent
+\usepackage{tabularx}
+\usepackage{tcolorbox}
+\usepackage{tikz}
+\usepackage{tocloft}
+\usepackage{units}
+\usepackage[hyphens,spaces,obeyspaces]{url}
+\usepackage{hyperref} 				% Tiene que ir despues que url, usado por el url del footnote
+\usepackage{verbatim}
+\usepackage{xcolor}
+
+% -> Personalización de los encabezados y pie de pagina
+\pagestyle{fancy} 
+\fancypagestyle{plain}
+\fancyhf{}
+\fancyhead[R]{Notas de Python}
+\fancyhead[L]{Gabriel Ruiz Martinez}
+%\fancyfoot[LE,RO]{\thepage}
+%{%
+	%\fancyhead[L]{Gabriel Ruiz}
+	%\fancyfoot[R]{\thepage}
+	%\renewcommand{\headrulewidth}{0pt}
+	%\renewcommand{\footrulewidth}{0pt}
+	%} 
+
+% -> Justificando el texto
+\decimalpoint
+\hyphenpenalty = 6000
+\tolerance = 1000
+\setlength{\parindent}{0cm}
+
+% -> Formato de los captions
+\captionsetup[figure]
+{%
+	font = small, 
+	labelfont = small,
+	format = hang,
+	labelformat = simple,
+	labelsep = period,
+	width=0.80\textwidth
+}
+
+% -> Declarando formato de figuras y ubicacion
+\DeclareGraphicsExtensions{.pdf,.png,.jpg,.gif}
+\graphicspath{{figuras/}}
+
+% -> Definiendo el color para los hipervinculos en el texto 
+\definecolor{navyblue}{rgb}{0.0, 0.0, 0.3}
+
+\hypersetup{
+	colorlinks = true,
+	linkcolor = navyblue,
+	filecolor = magenta,
+	citecolor= navyblue,
+	urlcolor = navyblue,
+	pdftitle ={ }
+}
+
+% -> Quitando la línea punteada en la tabla de contenidos para subsecciones
+\renewcommand{\cftdot}{}
+
+% ********** Listings para python ************
+% El codigo lo tome de:
+% https://tex.stackexchange.com/questions/83882/how-to-highlight-python-syntax-in-latex-listings-lstinputlistings-command
+
+% Default fixed font does not support bold face
+%\DeclareFixedFont{\ttb}{T1}{txtt}{bx}{n}{10} % for bold
+%\DeclareFixedFont{\ttm}{T1}{txtt}{m}{n}{10}  % for normal
+
+% Custom colors
+%\definecolor{deepblue}{rgb}{0,0,0.5}
+%\definecolor{deepred}{rgb}{0.6,0,0}
+%\definecolor{deepgreen}{rgb}{0,0.5,0}
+
+%% Python style for highlighting
+%\newcommand\pythonstyle{\lstset{
+		%language=Python,
+		%basicstyle=\ttm,
+		%morekeywords={self},              % Add keywords here
+		%keywordstyle=\ttb\color{deepblue},
+		%emph={MyClass,__init__},          % Custom highlighting
+		%emphstyle=\ttb\color{deepred},    % Custom highlighting style
+		%stringstyle=\color{deepgreen},
+		%frame=tb,                         % Any extra options here
+		%showstringspaces=false
+		%}}
+
+%% Python environment
+%\lstnewenvironment{python}[1][]
+%{
+	%\pythonstyle
+	%\lstset{#1}
+	%}
+%{}
+
+%% Python for external files
+%\newcommand\pythonexternal[2][]{{
+		%\pythonstyle
+		%\lstinputlisting[#1]{#2}}}
+
+%% Python for inline
+%\newcommand\pythoninline[1]{{\pythonstyle\lstinline!#1!}}
+% ***************************************
+
+% -> Titulo
+\title{\textbf{GitHub}}
+\date{2025}
+\author{Gabriel Ruiz Martinez\\ Subcoordinación de Posgrado y Educación Continua, IMTA}
+
+%%%%%%%%%%%%% Fin de preambulo %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% ************* Iniciando el documento *******************
+\begin{document}
+	
+	% Cambiando la palabra Índice a Contenido
+	\renewcommand{\contentsname}{Contenido} 
+	
+	\maketitle
+	
+	\vspace{0.25cm}
+	\hrule height 1pt
+	
+	% Insertando el indice 
+	\tableofcontents
+	
+	% Agregando la linea que separa el indice del texto inicial
+	\vspace{0.25cm}
+	\hrule
+	
+	% Insertando el contenido del documento
+	\input{github}
+	
+\end{document}
+% *********************************************************
